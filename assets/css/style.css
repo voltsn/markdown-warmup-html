@@ -1,0 +1,122 @@
+/* || Reset Rules */
+html{
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* || General Rules */
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    background-color: #050505;
+    color: #fff;
+    /* text-align: center; */
+}
+
+h1,
+h2,
+h3{
+    font-family: "Playfair Display", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.main-heading,
+.about-heading,
+.hobbies-heading,
+.trust-heading,
+.trivia-heading{
+    margin-bottom: 20px;
+    font-size: 44px;
+}
+
+.trivia-subheading{
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.container {
+    padding: 40px 0;
+}
+
+/* || Header Rules */
+.main-header{
+    background-image: url("/assets/images/sunset-background.jpeg"), url("/assets/images/arno.jpg");
+    background-repeat: no-repeat;
+    background-size: cover, 270px;
+    background-position: center;
+    padding: 50px 22px;
+    height: 500px;
+    background-blend-mode: color-burn;
+}
+
+.main-heading{
+    margin: 10px 0;
+}
+
+.quote{
+    width: 60%;
+}
+
+.quote-citation {
+    font-weight: 300;
+    padding: 8px 0;
+}
+
+/* || About Rules */
+
+.about-heading{
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.about-table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.about-table thead th{
+    padding: 8px;
+}
+
+/* || Hobbies Rules */
+.hobbies-list-item{
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.hobbies-sublist  > .hobbies-list-item{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* || Footer Rules */
+.footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.prev-link,
+.next-link{
+    color: crimson;
+    text-decoration: none;
+}
