@@ -52,7 +52,7 @@ ul {
 
 /* || Header Rules */
 .main-header{
-    background-image: url("/assets/images/sunset-background.jpeg"), url("/assets/images/arno.jpg");
+    background-image: url("../images/sunset-background.jpeg"), url("../images/arno.jpg");
     background-repeat: no-repeat;
     background-size: cover, 270px;
     background-position: center;
