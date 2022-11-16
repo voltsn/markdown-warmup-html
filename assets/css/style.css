@@ -16,11 +16,10 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 950px;
     width: 80%;
     background-color: #050505;
     color: #fff;
-    /* text-align: center; */
 }
 
 h1,
@@ -33,18 +32,13 @@ ul {
     list-style-type: none;
 }
 
-p{
-    font-size: 18px;
-    line-height: 1.7;
-}
-
 .main-heading,
 .about-heading,
 .hobbies-heading,
 .trust-heading,
 .trivia-heading{
     margin-bottom: 20px;
-    font-size: 44px;
+    font-size: clamp(28px, 2.5vw, 44px);
 }
 
 .trivia-subheading{
@@ -81,6 +75,9 @@ p{
 }
 
 /* || About Rules */
+.about{
+    overflow: auto;
+}
 
 .about-heading{
     text-transform: capitalize;
@@ -88,12 +85,15 @@ p{
 }
 
 .about-table{
-    table-layout: fixed;
     width: 100%;
+    min-width: 700px;
+    display: block;
 }
 
-.about-table thead th{
-    padding: 8px;
+.about-table thead th,
+.about-table tbody td{
+    text-align: center;
+    padding:  5px 8px;
 }
 
 /* || Hobbies Rules */
@@ -107,6 +107,18 @@ p{
 .hobbies-sublist  > .hobbies-list-item{
     font-size: 14px;
     font-weight: 300;
+}
+
+/* || Trust Rules */
+.trust-text{
+    font-size: 18px;
+}
+
+/* || Trivia Rules */
+.trivia-text{
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 55ch;
 }
 
 /* || Footer Rules */
